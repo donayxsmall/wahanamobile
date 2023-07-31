@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Single List Item Design -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:id="@+id/tabel_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_layout">
+        <TableLayout
+            android:id="@+id/table_ttk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:id="@+id/no_ttk_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textColor="@color/headermain_textcolor"
+                    android:padding="5dip"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/no_ttk_label"/>
+                <TextView
+                    android:id="@+id/pembanding"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textColor="@color/headermain_textcolor"
+                    android:padding="5dip"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text=":"/>
+                <TextView
+                    android:id="@+id/no_ttk_isi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textColor="@color/headermain_textcolor"
+                    android:padding="5dip"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="3232"/>
+            </TableRow>
+        </TableLayout>
+        <RadioGroup
+            android:id="@+id/radio_group_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table_ttk"
+            android:orientation = "vertical">
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/accent"
+                android:drawable="@drawable/custom_radiobutton"
+                android:text="YA"
+                android:textColor="@color/main_textcolor"/>
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:buttonTint="@color/accent"
+                android:drawable="@drawable/custom_radiobutton"
+                android:layout_height="wrap_content"
+                android:text="TIDAK"
+                android:textColor="@color/main_textcolor" />
+        </RadioGroup>
+    </RelativeLayout>
+</RelativeLayout>

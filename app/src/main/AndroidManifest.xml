@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wahana.wahanamobile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION"
+        tools:ignore="MockLocation" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.wahana.wahanamobile.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.wahana.wahanamobile.permission.C2D_MESSAGE" />
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconapkwahananew"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Dark"
+        android:windowSoftInputMode="stateAlwaysHidden">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Absensi"
+            android:screenOrientation="portrait" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more
+     information.
+        -->
+        firebase
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.wahana.wahanamobile"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".PickupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PickupVerifikasi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PickupAirways"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DeliveredAirways"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UndeliveredAirways"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PickupAirwaysStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DeliveryNote"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DeliveryNoteList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AttendanceReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BarcodeScannerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CekTarifActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PickupConclusion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PickupManifest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CariAgenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OfflineDeliveryNote"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditOffline"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchOriginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchDestinationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Signup2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Signup3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignupFinishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddressSearchActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Firebase Notifications -->
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MemberAirways"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DetailMemberAirways"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThanksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SalesMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerRelation.BuatAgenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerRelation.BuatAgen2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerRelation.BuatAgen3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerRelation.InputNomorAgenUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerRelation.InputNomorAgenDailyReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerRelation.DailyReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerRelation.KelebihanKekuranganAgen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".member.PendaftaranCalonAgen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".member.PendaftaranCalonAgen2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OpsMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".member.RincianSaldo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerRelation.PengajuanAgenAR"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerRelation.PengajuanAgenAR2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerRelation.PengajuanAgenAR3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".member.TopUpSaldo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".member.DetailTransaksi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerRelation.AnalisaCalonAgen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ArMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".member.BuatPraTTKActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.suratJalan.SuratJalanScannerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.suratJalan.InputNIKKurir"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.suratJalan.InputViaKurir"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.ListSubMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.HasilProses"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.stms.SerahTerimaMSActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.stms.inputNoLabelMSActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.stsm.SerahTerimaSMActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.manifestSortir.InputPJActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.manifestSortir.ManifestSortirActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.manifestSortir.InputNoLabelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.manifestSortir.InputKodeKotaTujuan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.manifestSortir.SearchKodeTujuanMS"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.suratMuatan.SuratMuatanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.suratMuatan.InputNoLabelSMActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.suratMuatan.InputKodeKotaTujuanSM"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.SJP.InputNamaPenerus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.SJP.SuratJalanPenerusScanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.STBT.InputNikKurirSTBT"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.STBT.STBTscanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.modaAngkutan.AddKendaraanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.modaAngkutan.ScanMAActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.modaAngkutan.AddDataMAActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.modaAngkutan.SearchMobilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.modaAngkutan.FormAddKendaraanMaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.modaAngkutan.SearchViaMaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.modaAngkutan.InputKodeVia"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.stms.inputMSActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.stsm.inputSMActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.STK.StkScannerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.PreviewResultScanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.ListTTKbyMS"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.HasilError"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.SJP.SearchPenerusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.PrintActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.TestPrint"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.tandaiRetur.TandaiRetur"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.tandaiRetur.inputTTKActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HasilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UbahPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.inputSMU.inputMAActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.inputSMU.updateDataMAActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.editSJP.inpuSJPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.editSJP.updateSJPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.ReportPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.penerimaanRetur.inputTTKReturActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.penerimaanRetur.penerimaanRetur"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.selisihBerat.inputTTKSelisihBerat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.selisihBerat.selisihBeratActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.rejectxray.inputttkrejectxray"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.rejectxray.tandairejectxray"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.salahdestinasi.inputtksalahdestinasi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.salahdestinasi.tandaisalahdestinasi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.salahtempel.inputtksalahtempel"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.salahtempel.tandaisalahtempel"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".camerates.Camerates"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".camerates.Camerates2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.BBM.InputBBM"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.inputSMU.SearchAirlinesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.BBM.SearchMobilBBMActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Hrd.Cuti"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Hrd.Ijin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.Pickup.PickupScanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.stpu.StpuScanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.stpu.InputNikSupir"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.stpu.StpuVerifikasi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.createqrcode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.ApprovalSJ.ListApprovalSJ"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.BarcodeScanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.ApprovalSJ.ListSJBelumApproval"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.ApprovalSJ.SearchSjApprovalNik"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TesGPS"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.Pickup.PickupAgenNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.Pickup.PickupKodeVerifikasiNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecycleView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.Pickup.PickupKodeSortir"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.stpu.StpuKodeSortir"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.stpu.ListTTKnotFound"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.SJP.ListdetailSJP"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.editSJP.InputSJPttk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.editSJP.updateSJperTTK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.USManual.UpdateTerkirimManual"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.USManual.DetailTTKUSterkirimmanual"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.TTKBermasalah.tandaittkbermasalah"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ops.PickupRetail.PickupAgenRetail"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Ops.PanelMW.UpdateTerkirimMW" />
+        <activity android:name=".Ops.PickupRetail.PickupKodeVerifikasiRetail" />
+        <activity android:name=".Ops.PickupRetail.PickupKodeSortirRetail" />
+        <activity android:name=".Ops.PickupRetail.PickupScannerRetail" />
+        <activity android:name=".Ops.PickupRetail.ListTTKnotFoundPickup" />
+        <activity android:name=".Ops.TestScanHardware.ScanHardware" />
+        <activity android:name=".Ops.STMSRETUR.InputTTKRetur" />
+        <activity android:name=".Ops.STMSRETUR.PenerimaanReturV2" />
+        <activity android:name=".Ops.KeranjangRetur.InputKeranjang" />
+        <activity android:name=".Ops.KeranjangRetur.KeranjangScanner" />
+        <activity android:name=".Ops.stpuretail.InputNikSupirRetail" />
+        <activity android:name=".Ops.stpuretail.StpuKodeSortirRetail" />
+        <activity android:name=".Ops.KeranjangRetur.BuatKeranjangBaru" />
+        <activity android:name=".Ops.Destroy.InputDestroy" />
+        <activity android:name=".Ops.Destroy.SearchTTKKeranjang" />
+        <activity android:name=".Ops.Destroy.TandaiDestroy" />
+        <activity android:name=".Ops.PenerimaanReturSalahtempel.InputTTKReturSalahtempel" />
+        <activity android:name=".Ops.PenerimaanReturSalahtempel.PenerimaanReturSalahTempel" />
+        <activity android:name=".Ops.rejectxray.tandairejectxrayNew" />
+        <activity android:name=".Ops.STKSW.SerahTerimaSTKSW" />
+        <activity android:name=".Ops.stpu.StpuScannerHardware" />
+        <activity android:name=".Ops.Pickup.PickupScannerHardware" />
+        <activity android:name=".Ops.stpuaccount.InputNikSupirAccount" />
+        <activity android:name=".Ops.stpuaccount.StpuKodeSortirAccount" />
+        <activity android:name=".Ops.stpuaccount.StpuScannerHardwareAccount" />
+        <activity android:name=".Ops.stpuaccount.ListTTKnotFoundAccount" />
+        <activity android:name=".Ops.PickupRetail.VerifikasiTTKBatal" />
+        <activity android:name=".Ops.PickupRetail.KodeVerifikasiTTKBatal" />
+        <activity android:name=".Ops.STMSRETUR.SearchKeranjang" />
+        <activity android:name=".Ops.STMSRETUR.SearchAlasanReturCS" />
+        <activity android:name=".Ops.editBeratTTK.edit_berat_ttk" />
+        <activity android:name=".Ops.editBeratTTK.input_ttk_editberat" />
+        <activity android:name=".Ops.stsm.InputNoMa" />
+        <activity android:name=".Ops.PreviewResultScannerNotFound" />
+        <activity android:name=".Ops.STPUdirectMA.inputDataSTPUdirectMa" />
+        <activity android:name=".Ops.STPUdirectMA.StpuScannerdirectMa" />
+        <activity android:name=".Ops.BuatMAdirect.inputDataMaDirect" />
+        <activity android:name=".Ops.BongkarMA.inputDataBongkarMa" />
+        <activity android:name=".Ops.BongkarMA.QRcodeMa" />
+        <activity
+            android:name=".Ops.BongkarMA.LihatProsesBongkar"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Ops.BongkarMA.inputQrMa" />
+        <activity android:name=".Ops.BongkarMA.ScanBongkarMa" />
+        <!-- TAMBAHAN -->
+        <activity android:name=".Ops.stms.inputNoLabelMSv2Activity" />
+        <activity android:name=".Ops.stms.SerahTerimaMSv2Activity" />
+        <activity android:name=".Ops.stsm.SerahTerimaSMv2Activity" />
+        <activity android:name=".Ops.BuatMAdirect.SearchMobilMa" />
+        <activity android:name=".Ops.STPUBERAT.inputDataSTPUBerat" />
+        <activity android:name=".Ops.STPUBERAT.StpuBeratScanner" />
+        <activity android:name=".Ops.BongkarMA.LihatBongkarMa" />
+        <activity android:name=".Ops.ReportPageActivityV2"></activity>
+    </application>
+
+</manifest>

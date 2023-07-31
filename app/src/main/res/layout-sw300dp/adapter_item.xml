@@ -1,0 +1,26 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_background_selector"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <TextView android:id="@+id/textview_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="80sp">
+    </TextView>
+    <TextView android:id="@+id/textview_odd"
+       android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@+id/textview_content"
+        android:textSize="14sp" >
+    </TextView>
+
+</RelativeLayout>

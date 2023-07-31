@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Single List Item Design -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+       >
+        <ImageView
+            android:id="@+id/image_agen"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:src="@drawable/lokasi_agen"
+            android:layout_weight="0.1"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/nama_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_textcolor"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/alamat_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_textcolor"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/jarak_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_textcolor"
+                android:textSize="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_textcolor"
+                android:textSize="12dp"
+                android:text=" km"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

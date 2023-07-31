@@ -1,0 +1,958 @@
+<resources>
+    <string name="app_name">Wahana Mobile</string>
+    <string name="google_map_key">AIzaSyAZwqU0H1Fxb8-hGj6t1fKKW984Qam9UY0</string>
+    <string name="default_text_ps">180PS</string>
+    <string name="separator">/</string>
+    <string name="default_text_kws">120kW</string>
+    <string name="version">Version</string>
+    <string name="versi">1.7.1</string>
+    <string name="timeout">180000</string>
+
+    <string name="versinew">1.7.0</string>
+
+    <string name="partnerid">androidoops</string>
+    <string name="versionpu">v6</string>
+
+    <string name="main_kode_agen"><u>KODE AGEN</u></string>
+    <string name="main_manifest"><u>NOMOR MANIFEST</u></string>
+    <string name="main_kode_verifikasi"><u>KODE VERIFIKASI</u></string>
+    <string name="input_nik_label"><u>NIK KURIR</u></string>
+    <string name="input_via"><u>VIA JALAN KURIR</u></string>
+    <string name="input_namapenerus">Nama Penerus</string>
+    <string name="input_via_angkutan"><u>VIA ANGKUTAN</u></string>
+    <string name="input_via_jalan_sm_label"><u>VIA JALAN SURAT MUATAN</u></string>
+    <string name="main_track_shipping"><u>TRACK SHIPPING</u></string>
+    <string name="main_result_tracking"><u>TRACKING</u></string>
+    <string name="kode_sortir_label">KODE SORTIR</string>
+    <string name="nomor_kode_ttk">KODE SORTIR</string>
+    <string name="main_tipe_absen_label">TIPE ABSEN</string>
+    <string name="no_ttk_label">NO TTK</string>
+    <string name="kode_koli_label">JUMLAH KOLI</string>
+    <string name="main_foto_diri_label">FOTO DIRI</string>
+    <string name="main_foto_ttk">FOTO</string>
+    <string name="main_status_terkirim"><u>STATUS TERKIRIM</u></string>
+    <string name="main_status_belum_terkirim"><u>STATUS BELUM TERKIRIM</u></string>
+    <string name="main_nik_supir"><u>NIK SUPIR</u></string>
+
+    <string name="download_Pdf">Download pdf</string>
+    <string name="download_Doc">Download Doc</string>
+    <string name="download_zip">Download Zip</string>
+    <string name="download_video">Download Video</string>
+    <string name="download_mp3">Download MP3</string>
+    <string name="openFolder">Open Downloaded Folder</string>
+    <string name="downloadStarted">Download Started…</string>
+    <string name="downloadCompleted">Download Completed…</string>
+    <string name="downloadFailed">Download Failed…</string>
+    <string name="downloadAgain">Download Again</string>
+
+
+    <string-array name="menuutama">
+        <item>wahana_mydetail</item>
+        <item>wahana_absensi</item>
+        <item>wahana_cek_tarif</item>
+        <item>wahana_cari_agen</item>
+        <item>wahana_customer_service</item>
+        <item>wahana_about_us</item>
+    </string-array>
+
+
+    <string-array name="menuops">
+        <item>wahana_absensi</item>
+        <item>wahana_myttk</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+    </string-array>
+
+    <string-array name="judulpelaksanadelivery">
+        <item>AKTIVITAS KARYAWAN</item>
+        <item>Sisa Paket</item>
+        <item>TTK Terkirim</item>
+        <item>TTK Belum Terkirim</item>
+        <item>Absensi</item>
+        <item>Cek Tarif</item>
+        <!--<item>CEK TARIF</item>-->
+        <!--<item>CARI AGEN</item>-->
+        <!--<item>CUSTOMER SERVICE</item>-->
+        <!--<item>ABOUT US</item>-->
+    </string-array>
+
+    <string-array name="judulpelaksanates">
+        <item>AKTIVITAS KARYAWAN</item>
+        <item>Sisa Paket</item>
+        <item>TTK Terkirim</item>
+        <item>TTK Belum Terkirim</item>
+        <item>Absensi</item>
+    </string-array>
+
+    <string-array name="menupelaksanadelivery">
+        <item>wahana_mydetail</item>
+        <item>wahana_sisa</item>
+        <item>wahana_myttk</item>
+        <item>wahana_myttk</item>
+        <item>wahana_absensi</item>
+        <item>wahana_cek_tarif</item>
+        <!--<item>wahana_cari_agen</item>-->
+        <!--<item>wahana_customer_service</item>-->
+        <!--<item>wahana_about_us</item>-->
+    </string-array>
+
+    <string-array name="menupelaksanates">
+        <item>wahana_mydetail</item>
+        <item>wahana_sisa</item>
+        <item>wahana_myttk</item>
+        <item>wahana_myttk</item>
+        <item>wahana_absensi</item>
+    </string-array>
+
+    <string-array name="judulpelaksanapickup">
+        <item>AKTIVITAS KARYAWAN</item>
+        <item>Pick Up</item>
+        <item>CEK TARIF</item>
+        <item>Absensi</item>
+        <item>CUSTOMER SERVICE</item>
+        <item>ABOUT US</item>
+        <!--<item>CEK TARIF</item>-->
+        <!--<item>CARI AGEN</item>-->
+        <!--<item>CUSTOMER SERVICE</item>-->
+        <!--<item>ABOUT US</item>-->
+    </string-array>
+
+    <string-array name="menupelaksanapickup">
+        <item>wahana_mydetail</item>
+        <item>wahana_pickup</item>
+        <item>wahana_cek_tarif</item>
+        <item>wahana_absensi</item>
+        <item>wahana_customer_service</item>
+        <item>wahana_about_us</item>
+        <!--<item>wahana_cari_agen</item>-->
+        <!--<item>wahana_customer_service</item>-->
+    </string-array>
+
+    <string-array name="judulpelaksanaproseschecker">
+        <item>AKTIVITAS KARYAWAN</item>
+        <item>SORTING CENTRE</item>
+        <item>Absensi</item>
+        <item>CEK TARIF</item>
+        <item>CUSTOMER SERVICE</item>
+        <item>ABOUT US</item>
+        <!--<item>CEK TARIF</item>-->
+        <!--<item>CARI AGEN</item>-->
+        <!--<item>CUSTOMER SERVICE</item>-->
+        <!--<item>ABOUT US</item>-->
+    </string-array>
+
+    <string-array name="menupelaksanaproseschecker">
+        <item>wahana_mydetail</item>
+        <item>wahana_pickup</item>
+        <item>wahana_absensi</item>
+        <item>wahana_cek_tarif</item>
+        <item>wahana_customer_service</item>
+        <item>wahana_about_us</item>
+        <!--<item>wahana_cari_agen</item>-->
+        <!--<item>wahana_customer_service</item>-->
+    </string-array>
+
+    <string-array name="judulpelaksanaprosessortir">
+        <item>AKTIVITAS KARYAWAN</item>
+        <item>GATEWAY</item>
+        <item>BUAT MANIFEST SORTIR</item>
+        <item>STSM</item>
+        <item>STMS</item>
+        <item>BUAT MA</item>
+        <item>Absensi</item>
+        <item>ABOUT US</item>
+        <!--<item>CEK TARIF</item>-->
+        <!--<item>CARI AGEN</item>-->
+        <!--<item>CUSTOMER SERVICE</item>-->
+        <!--<item>ABOUT US</item>-->
+    </string-array>
+
+    <string-array name="menupelaksanaprosessortir">
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_absensi</item>
+        <item>wahana_about_us</item>
+        <!--<item>wahana_cari_agen</item>-->
+        <!--<item>wahana_customer_service</item>-->
+    </string-array>
+
+    <string-array name="judulsupervisordelivery">
+        <item>ABSENSI</item>
+        <item>AKTIVITAS KARYAWAN</item>
+        <item>TANDAI RETUR</item>
+        <item>TTK</item>
+        <item>KANTOR DELIVERY</item>
+        <item>BUAT STK</item>
+        <item>BUAT MANIFEST SORTIR</item>
+        <item>STSM</item>
+        <item>STMS</item>
+        <item>BUAT MA</item>
+        <item>BUAT SJ</item>
+        <item>Buat SJP</item>
+        <item>TTK TERKIRIM</item>
+        <item>TTK BELUM TERKIRIM</item>
+        <item>STBT</item>
+        <item>ABOUT US</item>
+    </string-array>
+
+    <string-array name="menusupervisordelivery">
+        <item>wahana_absensi</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_myttk</item>
+        <item>wahana_myttk</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_about_us</item>
+        <!--<item>wahana_cari_agen</item>-->
+        <!--<item>wahana_customer_service</item>-->
+    </string-array>
+
+    <string-array name="judulsupervisorpickup">
+        <item>ABSENSI</item>
+        <item>AKTIVITAS KARYAWAN</item>
+        <item>LAPORAN BIAYA</item>
+        <item>TTK</item>
+        <item>MONITORING</item>
+        <item>OPERASIONAL</item>
+        <item>INFORMASI LAPORAN</item>
+        <item>ABOUT US</item>
+    </string-array>
+
+    <string-array name="menusupervisorpickup">
+        <item>wahana_absensi</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_about_us</item>
+    </string-array>
+
+    <string-array name="judulsupervisorproses">
+        <item>AKTIVITAS KARYAWAN</item>
+        <item>GATEWAY</item>
+        <item>BUAT MANIFEST SORTIR</item>
+        <item>BUAT MA</item>
+        <item>STSM</item>
+        <item>STMS</item>
+        <item>Absensi</item>
+        <item>ABOUT US</item>
+    </string-array>
+
+    <string-array name="menusupervisorproses">
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_absensi</item>
+        <item>wahana_about_us</item>
+        <!--<item>wahana_cari_agen</item>-->
+        <!--<item>wahana_customer_service</item>-->
+    </string-array>
+
+
+    <string-array name="judulpelaksanapickupdelivery">
+        <item>AKTIVITAS KARYAWAN</item>
+        <item>Sisa Paket</item>
+        <item>TTK Terkirim</item>
+        <item>TTK Belum Terkirim</item>
+        <item>Absensi</item>
+        <item>Pickup</item>
+        <!--<item>CEK TARIF</item>-->
+        <!--<item>CARI AGEN</item>-->
+        <!--<item>CUSTOMER SERVICE</item>-->
+        <!--<item>ABOUT US</item>-->
+    </string-array>
+
+    <string-array name="menupelaksanapickupdelivery">
+        <item>wahana_mydetail</item>
+        <item>wahana_sisa</item>
+        <item>wahana_myttk</item>
+        <item>wahana_myttk</item>
+        <item>wahana_absensi</item>
+        <item>wahana_pickup</item>
+        <!--<item>wahana_cari_agen</item>-->
+        <!--<item>wahana_customer_service</item>-->
+        <!--<item>wahana_about_us</item>-->
+    </string-array>
+
+
+    <string-array name="menusaldo">
+        <item>wahana_sisa</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_cari_agen</item>
+    </string-array>
+    <string-array name="judulsaldo">
+        <item>SISA SALDO ANDA</item>
+        <item>TOP UP SALDO</item>
+        <item>DETAIL TRANSAKSI</item>
+
+    </string-array>
+    <string-array name="judulutama">
+        <item>AKTIVITAS KARYAWAN</item>
+        <item>ABSENSI</item>
+        <item>CEK TARIF</item>
+        <item>CARI AGEN</item>
+        <item>CUSTOMER SERVICE</item>
+        <item>ABOUT US</item>
+
+    </string-array>
+    <string-array name="juduluser">
+        <item>BUAT PRA TTK</item>
+
+        <item>TOP UP SALDO ANDA</item>
+        <item>MY TTK</item>
+        <item>CEK TARIF</item>
+        <item>CARI AGEN</item>
+        <item>PENGAJUAN AGEN</item>
+        <item>CUSTOMER SERVICE</item>
+        <item>ABOUT US</item>
+    </string-array>
+    <string-array name="menuuser">
+        <item>wahana_myttk</item>
+        <item>wahana_sisa</item>
+        <item>wahana_myttk</item>
+        <item>wahana_cek_tarif</item>
+        <item>wahana_cari_agen</item>
+        <item>wahana_myttk</item>
+        <item>wahana_customer_service</item>
+        <item>wahana_about_us</item>
+    </string-array>
+    <string-array name="menusales">
+        <item>wahana_cari_agen</item>
+        <item>wahana_cek_tarif</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_customer_service</item>
+        <item>wahana_about_us</item>
+    </string-array>
+    <string-array name="judulsales">
+        <item>PENGAJUAN AGEN</item>
+        <item>CEK TARIF</item>
+        <item>ABSENSI</item>
+        <item>CUSTOMER SERVICE</item>
+        <item>ABOUT US</item>
+    </string-array>
+    <string-array name="menuar">
+        <item>wahana_myttk</item>
+        <item>wahana_cari_agen</item>
+        <item>wahana_cek_tarif</item>
+        <item>wahana_mydetail</item>
+        <item>wahana_customer_service</item>
+        <item>wahana_about_us</item>
+    </string-array>
+    <string-array name="judular">
+        <item>UPDATE AGEN</item>
+        <item>VISIT AGEN</item>
+        <item>CEK TARIF</item>
+        <item>ABSENSI</item>
+        <item>CUSTOMER SERVICE</item>
+        <item>ABOUT US</item>
+    </string-array>
+    <string-array name="judulops">
+        <item>ABSENSI</item>
+        <item>STSM</item>
+        <item>STMS</item>
+        <item>BUAT SJ</item>
+        <item>BUAT MANIFEST SORTIR</item>
+        <item>BUAT MA</item>
+        <item>BUAT SURAT MUATAN</item>
+        <item>BUAT SJP</item>
+        <item>STBT</item>
+        <item>STK</item>
+    </string-array>
+
+    <string-array name="radius">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="hasil">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="absensi">
+        <item>Datang</item>
+        <item>Pulang</item>
+    </string-array>
+
+    <string-array name="SJ">
+        <item>Jalan</item>
+        <item>Motor</item>
+        <item>Mobil</item>
+    </string-array>
+
+    <string-array name="SJP">
+        <item>JNE</item>
+        <item>JNT</item>
+    </string-array>
+
+    <string-array name="via_jalan_sm">
+        <item>111</item>
+        <item>222</item>
+        <item>555</item>
+    </string-array>
+
+
+    <string-array name="via_angkutan">
+        <item>Darat</item>
+        <item>Laut</item>
+        <item>Udara</item>
+    </string-array>
+
+    <string-array name="kode_sortir">
+        <item>111</item>
+        <item>222</item>
+        <item>555</item>
+    </string-array>
+
+
+    <string-array name="layanan">
+        <item>Domestic Express Normal</item>
+    </string-array>
+
+    <string-array name="status_penerima">
+        <item>Penerima Langsung</item>
+        <item>Diwakilkan</item>
+    </string-array>
+
+    <string-array name="brand_logistik">
+        <item>Wahana Prestasi Logistik</item>
+        <item>Cahaya Logistik</item>
+        <item>SSL</item>
+    </string-array>
+
+    <string-array name="rekening_tujuan">
+        <item>1005642766 a/n Wahana Prestasi Logistik</item>
+        <item>2036407888 a/n Wahana Prestasi Logistik</item>
+        <item>2173180888 a/n Wahana Prestasi Logistik</item>
+        <item>2920100259006 a/n PT. Wahana Prestasi Logistik (CIMB NIAGA)</item>
+        <item>5010161888 a/n Prisma Kamajaya</item>
+        <item>5010251747 a/n Silvie Aprilia Zalukhu</item>
+        <item>5010251828 a/n Silvie Aprilia Zalukhu</item>
+        <item>5010307777 a/n PT. Wahana Prestasi Logistik </item>
+        <item>5010310000 a/n Prisma Kamajaya</item>
+        <item>6580630888 a/n PT. Wahana Prestasi Logistik (BCA)</item>
+        <item>9000004955515 a/n Silvie Aprilia Zalukhu</item>
+    </string-array>
+
+    <string-array name="alasan_belum_terkirim">
+        <item>Pindah Alamat</item>
+        <item>Rumah Kosong</item>
+        <item>Salah Alamat</item>
+        <item>Salah Tempel TTK</item>
+        <item>Salah Wilayah</item>
+        <item>Alamat Tidak Lengkap</item>
+    </string-array>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>SURAT JALAN</item>
+        <item>DAFTAR TTK</item>
+        <!--<item>OFFLINE TTK</item>-->
+        <item>RIWAYAT ABSENSI</item>
+        <item>UBAH PASSWORD</item>
+        <item>LOGOUT</item>
+    </string-array>
+
+    <string-array name="nav_drawer_items_spvdelivery">
+        <item>SURAT JALAN</item>
+        <item>DAFTAR TTK</item>
+        <!--<item>OFFLINE TTK</item>-->
+        <item>CHECK TTK BY MS</item>
+        <item>RIWAYAT ABSENSI</item>
+        <item>UBAH PASSWORD</item>
+        <item>LOGOUT</item>
+    </string-array>
+
+    <string-array name="nav_drawer_items_login">
+        <item>LOGOUT</item>
+    </string-array>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items_user">
+        <item>Ganti Password</item>
+        <item>LOGOUT</item>
+    </string-array>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items_sales">
+        <item>RIWAYAT ABSENSI</item>
+        <item>UBAH PASSWORD</item>
+        <item>LOGOUT</item>
+    </string-array>
+
+    <string-array name="nav_drawer_items_ops">
+        <item>CHECK TTK BY MS</item>
+        <item>RIWAYAT ABSENSI</item>
+        <item>UBAH PASSWORD</item>
+        <item>LOGOUT</item>
+    </string-array>
+
+    <array name="nav_drawer_icons_ops">
+        <item>@drawable/drawer_ttk_list</item>
+        <item>@drawable/drawer_absensi</item>
+        <item>@drawable/gembok</item>
+        <item>@drawable/drawer_logout</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/drawer_surat_jalan</item>
+        <item>@drawable/drawer_ttk_list</item>
+        <item>@drawable/new_list_offline</item>
+        <item>@drawable/drawer_absensi</item>
+        <item>@drawable/gembok</item>
+        <item>@drawable/drawer_logout</item>
+    </array>
+
+    <array name="nav_drawer_icons_spvdelivery">
+        <item>@drawable/drawer_surat_jalan</item>
+        <item>@drawable/drawer_ttk_list</item>
+        <item>@drawable/new_list_offline</item>
+        <item>@drawable/drawer_ttk_list</item>
+        <item>@drawable/drawer_absensi</item>
+        <item>@drawable/gembok</item>
+        <item>@drawable/drawer_logout</item>
+    </array>
+
+    <array name="nav_drawer_icons_user">
+        <item>@drawable/password_icon</item>
+        <item>@drawable/drawer_logout</item>
+    </array>
+
+    <array name="nav_drawer_icons_login">
+        <item>@drawable/password_icon</item>
+    </array>
+
+    <array name="nav_drawer_icons_sales">
+        <item>@drawable/drawer_absensi</item>
+        <item>@drawable/gembok</item>
+        <item>@drawable/drawer_logout</item>
+    </array>
+
+    <!--absesnsi-->
+    <string name="tanggal_jam_absensi">Tanggal/Jam </string>
+    <string name="tanggal_jam_isi">16:00:00</string>
+    <string name="calendar_isi">  01/05/06</string>
+
+    <string name="pengisi_absensi">Diisi oleh </string>
+    <string name="pengisi_absensi_isi">123 radit</string>
+    <string name="tipe_absen_label">Tipe Absen </string>
+    <string name="tipe_absen_isi">tipe absen</string>
+    <string name="foto_diri_label">Foto Diri </string>
+    <string name="foto_diri_tambah">Tambah Foto</string>
+    <string name="foto_diri_submit">Submit</string>
+    <string name="lokasi">Lokasi </string>
+    <string name="lokasi_isi">Ciputat</string>
+    <string name="form_submit">Submit</string>
+
+    <!--pickup-->
+    <string name="kode_agen_label">Kode Agen</string>
+    <string name="kode_agen2_label">Kode Agen </string>
+    <string name="kode_agen_isi">123</string>
+    <string name="kode_kurir_label">Kode Kurir  </string>
+    <string name="kode_kurir_isi">456</string>
+    <string name="kode_verifikasi_label">Kode Verifikasi</string>
+    <string name="btn_manifest_label">Buat Manifest Pickup</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <!--delivered & undelivered airways-->
+    <string name="ttk_label">TTK</string>
+    <string name="btn_scan">Scan</string>
+    <string name="status_label">Status </string>
+    <string name="status_isi">Terkirim</string>
+    <string name="status_undelivered_isi">Belum Terkirim</string>
+    <string name="nama_penerima_label">Nama Penerima </string>
+    <string name="nama_penerima_isi">Saya</string>
+    <string name="status_penerima_label">Status Penerima </string>
+    <string name="status_penerima_isi">Penerima Langsung</string>
+    <string name="keterangan_label">Keterangan </string>
+    <string name="keterangan_isi">Penerima Langsung</string>
+    <string name="foto_bukti_label">Foto Bukti </string>
+    <string name="foto_bukti_tambah">Tambah Foto</string>
+    <string name="foto_bukti_pilih">Pilih Gambar</string>
+    <string name="alasan_label">Alasan </string>
+    <string name="alasan_isi">Pindah Alamat</string>
+
+    <!--myinfo-->
+    <string name="tanggal_myinfo_label">Tanggal </string>
+    <string name="tanggal_isi"> 03/10/2016</string>
+    <string name="ubah_tanggal"> Ubah Tanggal</string>
+    <string name="total_poin_label">Total Poin </string>
+    <string name="total_poin_isi"> Rp.100.000</string>
+    <string name="jumlah_ttk_dikirim_label">Jumlah TTK Dikirim </string>
+    <string name="jumlah_ttk_dikirim_isi">200</string>
+    <string name="jumlah_ttk_terkirim_label">TTK Terkirim </string>
+    <string name="jumlah_ttk_terkirim_isi">150</string>
+    <string name="jumlah_ttk_belum_terkirim_label">TTK Belum Terkirim </string>
+    <string name="jumlah_ttk_belum_terkirim_isi">50</string>
+    <string name="berat_total_label">Berat Total </string>
+    <string name="berat_total_isi">200 Kg</string>
+    <string name="berat_terkirim_label">Berat Terkirim </string>
+    <string name="berat_terkirim_isi">150 Kg</string>
+    <string name="poin_kgp_label">Poin KGPS </string>
+    <string name="poin_kgp_isi">75000</string>
+    <string name="poin_kgs_label">Poin KGS </string>
+    <string name="poin_kgs_isi">100000</string>
+
+    <!--delivery note list-->
+    <string name="no_sj_label">NO SJ </string>
+    <string name="no_sj_isi">1</string>
+    <string name="total_ttk_label">Total TTK</string>
+    <string name="total_ttk_isi">2</string>
+
+    <!--attendance report-->
+    <string name="total_masuk_label">Total Masuk</string>
+    <string name="total_masuk_isi">2</string>
+    <string name="total_absen_label">Total Absen</string>
+    <string name="total_absen_isi">1</string>
+
+    <!--dialog-->
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="ImageContent">Image</string>
+
+    <!--about us-->
+    <string name="judul_about_us"><b>ABOUT US</b></string>
+    <string name="isi_about_us">PT. Wahana Prestasi Logistik is one of the leading domestic logistics companies in Indonesia. We offer broad portofolio of services including air, railways, roadways and sea transportation services as well as warehousing services.\n\nOur network covers every province in Indonesia, and we keep improving our reach to serve our customer better.</string>
+    <string name="judul_people"><b>PEOPLE</b></string>
+    <string name="skilled_label">Experienced people</string>
+    <string name="passionate_label">Deliver quality services</string>
+    <string name="on_time_label">On time delivery</string>
+    <string name="judul_technology"><b>TECHNOLOGY</b></string>
+    <string name="employ_label">Employ IT to our business proccess</string>
+    <string name="internet_label">Internet based tracking system</string>
+    <string name="quality_label">Quality control measures</string>
+    <string name="judul_capability"><b>CAPABILITY</b></string>
+    <string name="trucks_label">250 Trucks</string>
+    <string name="operation_label">60 Operation offices</string>
+    <string name="retail_label">900 Retail outlets</string>
+    <string name="staff_label">1200 Skilled staff</string>
+
+    <!--Customer Services-->
+    <string name="alamat_label">Jl. Rempoa Raya No.88 Rempoa, Ciputat, 15412, Tangerang Selatan, Banten, Indonesia.</string>
+    <string name="phone_label">Telp: +62 21 7341688</string>
+    <string name="fax_label">Fax: +62 21 73886974</string>
+    <string name="facebook_label">Wahana Prestasi Logistik</string>
+    <string name="instagram_label">wahana.logistik</string>
+    <string name="metro_label">METRO</string>
+    <string name="wa_judul">WA</string>
+    <string name="email_judul">EMAIL</string>
+    <string name="wilayah_jakarta_label">Wilayah DKI Jakarta</string>
+    <string name="wilayah_jawa_barat_label">Wilayah Jawa Barat</string>
+    <string name="wilayah_banten_label">Wilayah Debotabek</string>
+    <string name="non_metro_label">NON METRO</string>
+    <string name="wilayah_jawa_timur_label">Wilayah Jawa Timur, Bali dan Nusa Tenggara</string>
+    <string name="wilayah_jawa_tengah_label">Wilayah Jawa Tengah</string>
+    <string name="wilayah_kalimantan_label">Wilayah Kalimantan, Maluku, Sulawesi, dan Papua</string>
+    <string name="wilayah_sumatera_label">Wilayah Sumatera</string>
+    <string name="retur_label">RETUR</string>cs1@wahana.com
+    <string name="email_label">cs.pusat@wahana.com</string>
+    <string name="email_label_jawa_barat">cs.pusat@wahana.com</string>
+    <string name="email_label_banten">cs.pusat@wahana.com</string>
+    <string name="email_label_jawa_timur">cs.jatim@wahana.com</string>
+    <string name="email_label_jawa_tengah">cs.jateng@wahana.com</string>
+    <string name="email_label_kalimantan">cs.pusat@wahana.com</string>
+    <string name="email_label_sumatera">cs.pusat@wahana.com</string>
+    <string name="email_label_retur_1">cs.retur@wahana.com</string>
+    <string name="email_label_retur_2">cs.retur1@wahana.com</string>
+    <string name="wa_label">08970263120</string>
+    <string name="wa2_label">08981715841</string>
+    <string name="wa_label_jawa_barat">087880851688</string>
+    <string name="wa_label_banten">085939960425</string>
+    <string name="wa_label_jawa_timur">081586508605</string>
+    <string name="wa_label_jawa_tengah">081586508603</string>
+    <string name="wa_label_kalimantan">081586633293</string>
+    <string name="wa_label_sumatera">089658657626</string>
+    <string name="wa_label_retur">085214964890</string>
+    <string name="wa_label_retur2">087889037920</string>
+
+    <string name="isi_informasi">mohon masukkan tanggal lahir dan angka favorit anda yang benar karena angka tersebut akan dipakai sebagai no ID member.</string>
+    <string name="selamat_label_1">AKUN ANDA BERHASIL KAMI BUAT DENGAN USERNAME</string>
+    <string name="selamat_label_2">08081988111</string>
+    <string name="selamat_label_3">KAMI TELAH MENGIRIMKAN EMAIL UNTUK VERIFIKASI AKUN BARU ANDA. SILAHKAN CEK EMAIL ANDA.</string>
+
+    <string name="detail_member_airways"><u>Tracking My TTK</u></string>
+
+    <!--Customer Relation-->
+    <string name="judul_buat_agen"><u>UPDATE AGEN</u></string>
+    <string name="judul_pengajuan_agen_ar"><u>PENGAJUAN AGEN</u></string>
+    <string name="judul_topup_saldo"><u>TOP UP SALDO</u></string>
+    <string name="brand_label">BRAND</string>
+    <string name="nama_agen_label">NAMA</string>
+    <string name="input_id_agen"><u>UPDATE AGEN</u></string>
+    <string name="input_id_agen_daily_report"><u>DAILY REPORT AGEN</u></string>
+    <string name="input_stma"><u>INPUT NIK PELAKSANA KURIR</u></string>
+    <string name="input_poin_visit"><u>INPUT POIN VISIT</u></string>
+    <string name="input_kelebihan">KELEBIHAN AGEN</string>
+    <string name="input_kelebihan_calon">KELEBIHAN CALON AGEN</string>
+    <string name="input_kelemahan">KEKURANGAN AGEN</string>
+    <string name="input_kelemahan_calon">KEKURANGAN CALON AGEN</string>
+    <string name="input_catatan">CATATAN</string>
+    <string name="id_agen_label">Masukkan ID agen</string>
+    <string name="id_stma_label">Masukkan nik supir</string>
+    <string name="id_kelebihan_label">Masukkan kelebihan agen</string>
+    <string name="id_kelebihan_calon_label">Masukkan kelebihan calon agen</string>
+    <string name="id_kekurangan_label">Masukkan kekurangan agen</string>
+    <string name="id_kekurangan_calon_label">Masukkan kekurangan calon agen</string>
+    <string name="id_catatan_label">Masukkan catatan tambahan</string>
+    <string name="nama_agen_hint"><font size="12">Masukkan nama</font></string>
+    <string name="nama_calon_agen_hint"><font size="12">Masukkan nama pemilik calon agen</font></string>
+    <string name="ktp_label">NO.KTP</string>
+    <string name="ktp_hint"><font size="12">Masukkan nomor ktp</font></string>
+    <string name="ktp_calon_hint"><font size="12">Masukkan nomor ktp calon agen</font></string>
+
+    <string name="handphone_agen_label">No.Telpon</string>
+    <string name="handphone_agen_hint"><font size="12">Masukkan no. telepon agen</font></string>
+    <string name="handphone_calon_agen_hint"><font size="12">Masukkan no. telepon calon agen</font></string>
+    <string name="penanggung_jawab_label">ALAMAT PENANGGUNG JAWAB</string>
+    <string name="penanggung_jawab_hint"><font size="12">Masukkan alamat penanggung jawab agen</font></string>
+    <string name="penanggung_jawab_calon_hint"><font size="12">Masukkan alamat penanggung jawab calon agen</font></string>
+    <string name="alamat_agen_label">ALAMAT AGEN</string>
+    <string name="alamat_calon_agen_label">ALAMAT CALON AGEN</string>
+    <string name="alamat_pemilik_label">ALAMAT PEMILIK</string>
+    <string name="alamat_agen_hint"><font size="12">Masukkan alamat agen</font></string>
+    <string name="alamat_calon_agen_hint"><font size="12">Masukkan alamat calon agen</font></string>
+    <string name="alamat_pemilik_hint"><font size="12">Masukkan alamat pemilik agen</font></string>
+    <string name="email_agen_label">EMAIL</string>
+    <string name="email_agen_hint"><font size="12">Masukkan email</font></string>
+    <string name="email_calon_agen_hint"><font size="12">Masukkan email calon agen</font></string>
+    <string name="judul_detail_lokasi_agen"><u>LOKASI AGEN</u></string>
+    <string name="judul_detail_lokasi_calon_agen"><u>LOKASI CALON AGEN</u></string>
+    <string name="judul_detail_lokasi_pengajuan_agen"><u>LOKASI PENGAJUAN AGEN</u></string>
+    <string name="judul_update_foto_agen"><u>UPDATE FOTO</u></string>
+    <string name="judul_input_foto_calon_agen"><u>INPUT FOTO LOKASI</u></string>
+    <string name="judul_pengajuan_agen"><u>PENGAJUAN AGEN</u></string>
+    <string name="judul_buat_pra_ttk"><u>INPUT PRA TTK</u></string>
+    <string name="provinsi_label">PROVINSI</string>
+    <string name="kabkot_label">KABUPATEN/KOTA</string>
+    <string name="kecamatan_label">KECEMATAN</string>
+    <string name="kelurahan_label">KELURAHAN</string>
+    <string name="latitude_label">LATITUDE</string>
+    <string name="longitude_label">LONGITUDE</string>
+    <string name="latitude_hint"><font size="12">Masukkan latitude</font></string>
+    <string name="longitude_hint"><font size="12">Masukkan longitude</font></string>
+    <string name="foto_agen_tampak_depan">Foto Tampak Depan</string>
+
+    <string name="radio_bentuk_agen_label">1. Bentuk Agen</string>
+    <string name="bentuk_rumah">Rumah</string>
+    <string name="bentuk_ruko">Ruko</string>
+    <string name="bentuk_kios">Kios</string>
+    <string name="bentuk_rusun">Rusun</string>
+    <string name="bentuk_lainnya">Lainnya</string>
+
+    <string name="radio_lokasi_agen_label">2.Lokasi Agen</string>
+    <string name="lokasi_pinggirjalan">Pinggir Jalan</string>
+    <string name="lokasi_dalamkomplek">Dalam Komplek</string>
+    <string name="lokasi_mall">Mall</string>
+    <string name="lokasi_hotel">Hotel</string>
+    <string name="lokasi_pasar">Pasar</string>
+    <string name="lokasi_dalamgang">Dalam Gang</string>
+    <string name="lokasi_apartemen">Apartemen</string>
+    <string name="lokasi_lainnya">Lainnya</string>
+
+    <string name="radio_tipe_jalan_label">3.Tipe Jalan</string>
+    <string name="tipe_kelasI">Kelas I</string>
+    <string name="tipe_kelasII">Kelas II</string>
+    <string name="tipe_kelasIIIA">Kelas IIIA</string>
+    <string name="tipe_kelasIIIB">Kelas IIIB</string>
+    <string name="tipe_kelasIIIC">Kelas IIIC</string>
+
+    <string name="radio_intensitas_per_menit">4.Intensitas Kendaraan Per Menit</string>
+    <string name="intensitas_10">0-10</string>
+    <string name="intensitas_25">11-25</string>
+    <string name="intensitas_50">26-50</string>
+    <string name="intensitas_lebih50">51 lebih</string>
+
+    <string name="radio_neonbox">5.Neonbox</string>
+    <string name="neonbox_ya">Ya</string>
+    <string name="neonbox_tidak">Tidak</string>
+
+    <string name="radio_spanduk">6.Spanduk</string>
+    <string name="spanduk_ya">Ya</string>
+    <string name="spanduk_tidak">Tidak</string>
+
+    <string name="radio_standing_banner">7.Standing Banner</string>
+    <string name="standingbanner_ya">Ya</string>
+    <string name="standingbanner_tidak">Tidak</string>
+
+    <string name="radio_kemudahan_lokasi">8.Lokasi Agen Mudah Ditemukan</string>
+    <string name="kemudahan_ya">Ya</string>
+    <string name="kemudahan_tidak">Tidak</string>
+
+    <string name="radio_promosi_online">9.Promosi Online</string>
+    <string name="promosi_facebook">Facebook</string>
+    <string name="promosi_instagram">Instagram</string>
+    <string name="promosi_twitter">Twitter</string>
+    <string name="promosi_bukalapak">Bukalapak</string>
+    <string name="promosi_elevania">Elevania</string>
+    <string name="promosi_tokopedia">Tokopedia</string>
+    <string name="promosi_shopee">Shopee</string>
+    <string name="promosi_google_business">Google Business</string>
+    <string name="promosi_google_maps">Google Maps</string>
+    <string name="promosi_kaskus">Kaskus</string>
+    <string name="promosi_lainnya">Lainnya</string>
+
+    <string name="radio_promosi_offline">10.Promosi Offline</string>
+    <string name="promosioff_sebarflyer">Sebar Flyer</string>
+    <string name="promosioff_memasangspanduk">Petunjuk Arah</string>
+    <string name="promosioff_lainnya">Lainnya</string>
+
+    <string name="radio_rutinitas_promosi">11.Rutinitas Promosi</string>
+    <string name="rutinitas_1minggu">1 Minggu</string>
+    <string name="rutinitas_1bulan">1 Bulan</string>
+
+    <string name="radio_pickup_service">12.Melakukan Pickup Service</string>
+    <string name="pickup_ya">Ya</string>
+    <string name="pickup_tidak">Tidak</string>
+
+    <string name="radio_relasi_pihak_ketiga">13.Menjalin Relasi Pihak Ketiga</string>
+    <string name="relasi_tidak">Tidak</string>
+    <string name="relasi_swasta">Swasta</string>
+    <string name="relasi_pemerintahan">Pemerintahan</string>
+    <string name="relasi_keduanya">Keduanya</string>
+
+    <!--MEMBER-->
+    <string name="rekening_tujuan_label">Rekening Tujuan</string>
+    <string name="nilai_deposit_label">Nominal Deposit</string>
+    <string name="nilai_deposit_label_hint">Input jumlah deposit</string>
+    <string name="nama_pengirim_label">Pengirim</string>
+    <string name="input_nama_pengirim_label_hint">Nama pemilik rekening asal transfer</string>
+    <string name="foto_label">Bukti Transfer</string>
+    <string name="input_keterangan_hint">Input keterangan</string>
+    <string name="auto">[AUTO]</string>
+    <string name="no_referensi_label">NO. REFERENSI</string>
+    <string name="no_referensi_hint">Masukkan no. referensi</string>
+    <string name="layanan_label">LAYANAN</string>
+    <string name="judul_kiriman"><u>KIRIMAN</u></string>
+    <string name="berat_label">BERAT</string>
+    <string name="berat_hint"><font size="12">Masukkan berat</font></string>
+    <string name="dimensi_label">DIMENSI</string>
+    <string name="panjang_hint"><font size="12">P</font></string>
+    <string name="lebar_hint"><font size="12">L</font></string>
+    <string name="tinggi_hint"><font size="12">T</font></string>
+    <string name="tujuan_label">TUJUAN</string>
+    <string name="tujuan_hint"><font size="12">Masukkan kota tujuan</font></string>
+    <string name="isi_label">ISI</string>
+    <string name="isi_hint"><font size="12">Masukkan isi kiriman</font></string>
+    <string name="harga_label">NOMINAL BARANG</string>
+    <string name="harga_hint"><font size="12">Masukkan nominal barang</font></string>
+    <string name="judul_pengirim"><u>PENGIRIM</u></string>
+    <string name="nama_pengirim_hint"><font size="12">Masukkan nama pengirim</font></string>
+    <string name="telepon_pengirim_label">TELEPON</string>
+    <string name="telepon_pengirim_hint"><font size="12">Masukkan nomor telepon pengirim</font></string>
+    <string name="catatan_pengirim_label">CATATAN</string>
+    <string name="catatan_pengirim_hint"><font size="12">Masukkan catatan tambahan</font></string>
+    <string name="judul_penerima"><u>PENERIMA</u></string>
+    <string name="nama_penerima_hint"><font size="12">Masukkan nama penerima</font></string>
+    <string name="telepon_penerima_label">TELEPON</string>
+    <string name="telepon_penerima_hint"><font size="12">Masukkan nomor telepon penerima</font></string>
+    <string name="catatan_penerima_label">CATATAN</string>
+    <string name="catatan_penerima_hint"><font size="12">Masukkan catatan tambahan</font></string>
+    <string name="judul_hasil"><u>Rekap PraTTK</u></string>
+    <string name="total_berat_label">Berat</string>
+    <string name="total_berat_hint">Berat</string>
+    <string name="total_biaya_label">Total</string>
+    <string name="total_ongkir_hint">Total Ongkir</string>
+    <string name="biaya_asuransi_hint">Asuransi</string>
+    <string name="biaya_kirim_hint">Biaya</string>
+    <string name="berat_result_hint">Total Berat</string>
+    <string name="pembanding"><font size="12">:</font></string>
+    <string name="input_tujuan_pengiriman">Tujuan</string>
+    <string name="input_komisi">Komisi</string>
+    <string name="input_total_saldo">Sisa Saldo</string>
+    <string name="is_penerima_member">Penerima Member</string>
+    <string name="is_pengirim_sendiri">Pengirim Diri Sendiri</string>
+    <string name="id_penerima_label">MEMBER ID</string>
+    <string name="id_penerima_hint"><font size="12">Masukkan id member</font></string>
+    <string name="nama_pengirim_sendiri_text">Reza A Lazuardy</string>
+    <string name="telepon_pengirim_sendiri_text">087587383</string>
+    <string name="catatan_pengirim_sendiri_text"></string>
+    <string name="nama_pengirim_label2">PENGIRIM</string>
+    <string name="nama_penerima_label2">PENERIMA </string>
+    <string name="alamat_penerima_bukanmember_label">ALAMAT</string>
+    <string name="alamat_penerima_bukanmember_hint"><font size="12">Masukkan alamat penerima</font></string>
+    <string name="alamat_penerima_member_hint"><font size="12">Masukkan alamat penerima</font></string>
+    <string name="input_kantor_manifest_hint"><font size="12">Masukkan kode kantor sorting centre</font></string>
+    <string name="input_kantor_gateway_hint"><font size="12">Masukkan kode kantor gateway</font></string>
+    <string name="tujuan_penerima_bukanmember_label">TUJUAN</string>
+    <string name="tujuan_penerima_bukanmember_hint"><font size="12">Masukkan kota tujuan</font></string>
+    <string name="nama_penerima_member_hint"><font size="12">Reza Ayatuna Lazuardy</font></string>
+    <string name="telepon_penerima_member_hint"><font size="12">082122122</font></string>
+    <string name="tujuan_penerima_member_hint"><font size="12">Jakarta</font></string>
+    <string name="input_kode_kantor_label">INPUT KODE KANTOR SC</string>
+
+    <string name="judul_input_detail_manifest">INPUT DETAIL MANIFEST</string>
+    <string name="kode_ops_label">KODE OPS</string>
+    <string name="kode_ops_hint"><font size="12">Masukkan kode ops</font></string>
+    <string name="berat_manifest_label">BERAT</string>
+    <string name="berat_manifest_hint"><font size="12">Masukkan berat manifest</font></string>
+    <string name="nomor_keranjang_label">NOMOR KERANJANG</string>
+    <string name="nomor_keranjang_hint"><font size="12">Masukkan nomor keranjang</font></string>
+    <string name="penanggung_jawab_manifest_label">PENANGGUNG JAWAB</string>
+    <string name="penanggung_jawab_manifest_hint"><font size="12">Masukkan penanggung jawab manifest</font></string>
+    <string name="keterangan_manifest_label">KETERANGAN</string>
+    <string name="keterangan_manifest_hint"><font size="12">Masukkan keterangan manifest</font></string>
+    <string name="koli_manifest_label">INPUT KOLI</string>
+    <string name="koli_input"><font size="12">Input</font></string>
+    <string name="koli_scan"><font size="12">Scan</font></string>
+    <string name="koli_label">KOLI</string>
+    <string name="koli_hint"><font size="12">Masukkan koli</font></string>
+    <string name="koli_matang_label">KOLI MATANG</string>
+    <string name="koli_matang_hint"><font size="12">Masukkan koli matang</font></string>
+
+    <string name="kode_tujuan_label">KODE TUJUAN</string>
+    <string name="kode_tujuan_hint"><font size="12">Masukkan kode kantor tujuan</font></string>
+
+    <string name="kode_tujuan_ms_label">KODE KOTA TUJUAN</string>
+    <string name="kode_tujuan_ms_hint"><font size="12">Masukkan kode kota tujuan</font></string>
+
+    <string name="nik_pelaksana_pickup_hint"><font size="12">Masukkan nik pelaksana kurir</font></string>
+    <string name="pilih_kode_sortir_label">PILIH KODE SORTIR</string>
+
+    <string name="input_kode_kantor_gateway_sm_label">INPUT KODE KANTOR GATEWAY</string>
+    <string name="input_kode_kantor_gateway_sm_hint"><font size="12">Masukkan kode kantor gateway</font></string>
+
+    <string name="kode_tujuan_sm_label">KODE TUJUAN</string>
+    <string name="kode_tujuan_sm_hint"><font size="12">Masukkan kode kantor tujuan</font></string>
+
+    <string name="judul_preview_hasil_scan">PREVIEW HASIL SCAN</string>
+    <string name="judul_submenu">LIST MENU</string>
+
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+</resources>

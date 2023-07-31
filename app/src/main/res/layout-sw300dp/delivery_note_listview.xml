@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Single List Item Design -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginLeft="@dimen/margin_new"
+        android:layout_marginRight="@dimen/margin_new"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_layout">
+       <LinearLayout
+           android:id="@+id/data_surat_jalan"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           android:paddingBottom="5dp"
+           android:orientation="horizontal"
+           android:weightSum="1.0">
+           <ImageView
+               android:layout_width="0dp"
+               android:layout_height="20dp"
+               android:layout_weight="0.2"
+               android:src="@drawable/surat_jalan"/>
+           <TextView
+               android:id="@+id/surat_jalan_isi"
+               android:layout_width="0dp"
+               android:layout_weight="0.8"
+               android:layout_height="wrap_content"
+
+               android:textColor="@color/headermain_textcolor"
+               android:text="1237"
+               android:textSize="13sp"/>
+       </LinearLayout>
+        <LinearLayout
+            android:id="@+id/data_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/data_surat_jalan"
+            android:weightSum="1.0">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/calendar_icon"/>
+            <TextView
+                android:id="@+id/tanggal_isi"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/headermain_textcolor"
+                android:text="20/06/2016"
+                android:textSize="13sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/data_jumlah_ttk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/data_tanggal"
+            android:weightSum="1.0">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/jumlah_ttk"/>
+            <TextView
+                android:id="@+id/jumlah_ttk_label"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/headermain_textcolor"
+                android:text="JUMLAH TTK"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/pembanding"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/headermain_textcolor"
+                android:text=":"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/jumlah_ttk_isi"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/headermain_textcolor"
+                android:text="5 TTK"
+                android:textSize="13sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/data_ttk_terkirim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/data_jumlah_ttk"
+            android:weightSum="1.0">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/ceklis_icon"/>
+            <TextView
+                android:id="@+id/ttk_terkirim_label"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/headermain_textcolor"
+                android:text="TTK TERKIRIM"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/pembanding1"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/headermain_textcolor"
+                android:text=":"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/ttk_terkirim_isi"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/headermain_textcolor"
+                android:text="3 TTK"
+                android:textSize="13sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/data_ttk_belum_terkirim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/data_ttk_terkirim"
+            android:weightSum="1.0">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/tidak_terkirim_icon_black"/>
+            <TextView
+                android:id="@+id/ttk_belum_terkirim_label"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/headermain_textcolor"
+                android:text="TTK BELUM TERKIRIM"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/pembanding2"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/headermain_textcolor"
+                android:text=":"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/ttk_belum_terkirim_isi"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/headermain_textcolor"
+                android:text="2 TTK"
+                android:textSize="13sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/data_ttk_belum_terupdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/data_ttk_belum_terkirim"
+            android:weightSum="1.0">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/new_blm_update"/>
+            <TextView
+                android:id="@+id/ttk_belum_terupdate_label"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/headermain_textcolor"
+                android:text="TTK BELUM UPDATE"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/pembanding3"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/headermain_textcolor"
+                android:text=":"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/ttk_belum_terupdate_isi"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/headermain_textcolor"
+                android:text="2 TTK"
+                android:textSize="13sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/data_ttk_belum_serah_terima_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/data_ttk_belum_terupdate"
+            android:weightSum="1.0">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/new_blm_stbt"/>
+            <TextView
+                android:id="@+id/ttk_belum_serah_terima_bt_label"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:textColor="@color/headermain_textcolor"
+                android:text="TTK SUDAH ST BT"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/pembanding4"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/headermain_textcolor"
+                android:text=":"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/ttk_belum_serah_terima_bt_isi"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"
+                android:textColor="@color/headermain_textcolor"
+                android:text="2 TTK"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

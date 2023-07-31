@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wahana.wahanamobile.VerticalScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:clipChildren="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/material_yellow"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                app:layout_scrollFlags="enterAlways"
+                android:translationZ="100dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        </android.support.design.widget.AppBarLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationZ="100dp">
+            <RelativeLayout
+                android:id="@+id/info_layout"
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:translationZ="100dp"
+                android:padding="15dp"
+                android:background="@color/primary"
+                >
+                <LinearLayout
+                    android:id="@+id/tabel_dari"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/table_belum_terkirim">
+                    <TextView
+                        android:id="@+id/from_label"
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_absensi_form"
+                        android:textColor="#ffffff"
+                        android:text="Cari Kode Tujuan"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/layout_input_dari"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tabel_dari"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp">
+                    <AutoCompleteTextView
+                        android:id="@+id/input_loc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:textSize="16sp"
+                        android:background="@drawable/background_input"
+                        android:textColor="@color/main_textcolor"
+                        android:textColorHint="@color/headermain_textcolor"
+                        android:hint="Cari Kode Tujuan"
+                        />
+                    <ImageButton
+                        android:id="@+id/search_loc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/rounded_input_button_yellow_1"
+                        android:src="@drawable/search_icon"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <ListView
+                android:id="@+id/list_kodetujuan"
+                android:layout_below="@+id/info_layout"
+                android:layout_width="match_parent"
+
+                android:layout_marginBottom="10dp"
+                android:paddingTop="20dp"
+                android:background="#ffffff"
+                android:layout_height="500dp"
+                android:translationZ="100dp"
+                >
+            </ListView>
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</com.wahana.wahanamobile.VerticalScrollView>

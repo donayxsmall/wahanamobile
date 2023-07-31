@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="56dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView android:src="@drawable/wahana_logonew2018"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Email Label -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/uler_kadut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText android:id="@+id/input_email"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/login_nama"
+            android:inputType="textEmailAddress"
+            android:hint="username"
+            android:textColor="@color/accent"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Password Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+        <EditText android:id="@+id/input_password"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/login_password"
+            android:inputType="textPassword"
+            android:hint="password"
+            android:textColor="@color/accent"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <com.wahana.wahanamobile.helper.ButtonPlus
+        style="@style/button"
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/roundedbutton"
+        android:padding="12dp"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:text="LOGIN"
+        android:onClick="OnClick"/>
+
+    <!--<TextView android:id="@+id/link_forgot"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="@color/accent"-->
+        <!--android:text="Lupa password ?"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="14dip"/>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView android:id="@+id/link_signup"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/red"-->
+            <!--android:text="Bukan Member? Daftar"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingLeft="2dp"-->
+            <!--android:paddingRight="2dp"-->
+            <!--android:textSize="14dip"/>-->
+        <!--<TextView android:id="@+id/penyangga"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/accent"-->
+            <!--android:text="|"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="16dip"/>-->
+        <!--<TextView android:id="@+id/link_keuntungan"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/accent"-->
+            <!--android:text="Keuntungan"-->
+            <!--android:paddingLeft="2dp"-->
+            <!--android:paddingRight="2dp"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="14dip"/>-->
+    <!--</LinearLayout>-->
+
+    <com.wahana.wahanamobile.helper.ButtonPlus
+        style="@style/button"
+        android:id="@+id/btn_about"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/roundedbutton_select"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:textColor="@color/primary"
+        android:text="ABOUT US"
+        android:onClick="OnClick"/>
+
+</LinearLayout>

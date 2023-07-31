@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.wahana.wahanamobile.Ops.BongkarMA.LihatProsesBongkar">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:weightSum="1"
+                        >
+
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Total TTK"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            />
+
+                        <TextView
+                            android:layout_weight="0"
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:text=":"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/totalttk"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:weightSum="1"
+                        >
+
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="TTK Sudah Scan"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            />
+
+                        <TextView
+                            android:layout_weight="0"
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:text=":"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/totalttksudahscan"
+                            android:layout_weight="0.6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:weightSum="1"
+                        >
+
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="TTK Belum Scan"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            />
+
+                        <TextView
+                            android:layout_weight="0"
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:text=":"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/totalttkbelumscan"
+                            android:layout_weight="0.6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            />
+
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list_proses"
+                android:layout_below="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="20dp"
+                android:layout_height="match_parent"
+                android:translationZ="100dp"
+                >
+            </ListView>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

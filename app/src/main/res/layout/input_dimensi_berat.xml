@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textBerat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/berat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Berat"
+                android:textColor="@color/black"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textPanjang"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/panjang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:hint="Panjang"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textLebar"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/lebar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:hint="Lebar"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textTinggi"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/tinggi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:hint="Tinggi"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+
+
+            <com.wahana.wahanamobile.helper.ButtonPlus
+                style="@style/button"
+                android:id="@+id/input_buttoncancel"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_below="@+id/input_kode_sortir"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:background="@drawable/roundedbuttonred"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:text="CANCEL"/>
+
+            <com.wahana.wahanamobile.helper.ButtonPlus
+                style="@style/button"
+                android:id="@+id/input_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_below="@+id/input_kode_sortir"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:background="@drawable/roundedbutton"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:text="SUBMIT"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

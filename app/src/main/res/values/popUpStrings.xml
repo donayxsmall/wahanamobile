@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="write_external_storage_violation">Mohon buka permission WRITE_EXTERNAL_STORAGE</string>
+    <string name="gps_violation_title">GPS setting</string>
+    <string name="gps_violation">GPS tidak diijinkan, pergi ke setting?</string>
+    <string name="error_message_title">System Error</string>
+    <string name="error_message">System Error, Mohon Coba lagi.</string>
+    <string name="error_connection">Cek koneksi anda.</string>
+    <string name="update_airway_message">Data telah berhasil ditambahkan</string>
+</resources>

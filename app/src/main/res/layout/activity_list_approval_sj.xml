@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.wahana.wahanamobile.Ops.ApprovalSJ.ListApprovalSJ">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@color/material_yellow"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            app:layout_scrollFlags="enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/atas"
+            android:layout_marginTop="90dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/judul"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SJ-113183173"/>
+
+            <ListView
+                android:layout_below="@+id/judul"
+                android:id="@+id/listView"
+                android:dividerHeight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="420dp">
+            </ListView>
+
+        </RelativeLayout>
+
+
+        <com.wahana.wahanamobile.helper.ButtonPlus
+            style="@style/button"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/input_button"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/kodetujuan"
+            android:layout_height="50dp"
+            android:textSize="25sp"
+            android:text="Approval"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            />
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

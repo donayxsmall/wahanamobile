@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark">
+
+
+    <RelativeLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark"
+        >
+
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="-100px"
+            android:layout_marginRight="-100px"
+            android:layout_marginTop="0px"
+            android:layout_height="400dp" />
+
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:paddingTop="10dip"
+            android:paddingRight="15dip"
+            android:gravity="center_horizontal"
+            android:translationZ="100dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Scan No TTK"/>
+
+        <TextView
+            android:id="@+id/jumlah_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:paddingTop="0dip"
+            android:paddingRight="15dip"
+            android:gravity="right"
+            android:translationZ="100dp"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50px"
+            android:text="1"/>
+
+
+        <com.wahana.wahanamobile.helper.ButtonPlus
+            style="@style/button"
+            android:id="@+id/btn_preview_ttk"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="0dip"
+            android:text="Preview"
+            android:layout_gravity="left"
+            android:textSize="10sp"
+            android:background="@drawable/roundedbutton"
+            android:textColor="@color/white"
+            android:layout_below="@+id/judul"
+
+            />
+
+        <com.wahana.wahanamobile.helper.ButtonPlus
+            style="@style/button"
+            android:id="@+id/btn_add_manual"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="270dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:text="Manual"
+            android:textSize="10sp"
+            android:background="@drawable/roundedbutton"
+            android:textColor="@color/white"
+            />
+
+        <ListView
+            android:id="@+id/list_ttk_daftar"
+            android:background="@color/dark"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="300dp"
+            android:translationZ="100dp"
+            android:layout_marginTop="-60dp"
+
+            android:fadeScrollbars="false"
+            android:layout_marginBottom="50dp"
+            android:layout_below="@+id/content_frame"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/flash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Turn ON Flashlight"
+            android:background="@color/link"/>
+
+        <Button
+            android:id="@+id/flashoff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="Turn OFF Flashlight"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="20px"
+            android:text="Submit"
+            android:background="@color/link"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</RelativeLayout>

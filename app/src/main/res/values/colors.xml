@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#0070a8</color>
+    <color name="primary_dark">#3F51B5</color>
+    <color name="primary_darker">#3949AB</color>
+    <color name="link">#283593</color>
+    <color name="accent">#3D5AFE</color>
+    <color name="main_background">#eeeeee</color>
+    <color name="main_textcolor">#494949</color>
+    <color name="headermain_textcolor">#4c4c4c</color>
+
+    <color name="black">#FF000000</color>
+    <color name="whitegrey">#FFF2F2F2</color>
+
+    <color name="hinttext">#b7b4b4</color>
+
+
+    <!--material design color-->
+    <color name="white">#FFFFFF</color>
+    <color name="dark">#000000</color>
+    <color name="iron">#757575</color>
+
+    <!--material design color-->
+    <color name="red">#F44336</color>
+    <color name="red_dark">#D32F2F</color>
+    <color name="red_darker">#B71C1C</color>
+
+    <color name="material_indigo">#3f51b5</color>
+    <color name="material_yellow">#ffffff</color>
+    <color name="material_green">#4caf50</color>
+    <color name="material_blue">#2196f3</color>
+
+    <color name="table_header_text">#CCFFFFFF</color>
+    <color name="table_data_row_even">#11C5CAE9</color>
+    <color name="table_data_row_odd">#33C5CAE9</color>
+
+    <color name="table_status">#ffffff</color>
+
+    <color name="dark1">#6c72c9</color>
+</resources>

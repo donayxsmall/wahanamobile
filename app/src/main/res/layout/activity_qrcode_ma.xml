@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context="com.wahana.wahanamobile.Ops.BongkarMA.QRcodeMa">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:background="@drawable/rounded_layout"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:padding="25dp"
+
+                android:layout_below="@+id/info_layout"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/textma"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/main_textcolor"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:text="MA-131313-1313"
+                        />
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:id="@+id/qrcode"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        >
+
+
+                        <com.wahana.wahanamobile.helper.ButtonPlus
+                            style="@style/button"
+                            android:id="@+id/lihatproses"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_below="@+id/layout_foto"
+                            android:layout_height="42dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/roundedbutton"
+                            android:textColor="@color/white"
+                            android:text="LIHAT PROSES"/>
+
+                        <com.wahana.wahanamobile.helper.ButtonPlus
+                            style="@style/button"
+                            android:id="@+id/finish"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_below="@+id/layout_foto"
+                            android:layout_height="42dp"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/roundedbuttonred"
+                            android:textColor="@color/white"
+                            android:text="FINISH"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.wahana.wahanamobile.helper.ButtonPlus
+                            style="@style/button"
+                            android:id="@+id/stma"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:layout_width="150dp"
+                            android:layout_below="@+id/layout_foto"
+                            android:layout_height="42dp"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/roundedbuttonred"
+                            android:textColor="@color/white"
+                            android:text="STMA"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
